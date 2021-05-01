@@ -6,6 +6,7 @@ LABEL io.docker-3tier-demo.image-specs="{\"Description\":\"Containerized Postgre
 
 # avoid debconf errors
 ENV DEBIAN_FRONTEND=noninteractive
+ENV APP_SVR_NAME=appserver:3000
 
 # make sure everything is up to date - update and upgrade
 #RUN apt-get update && apt-get upgrade -y &&

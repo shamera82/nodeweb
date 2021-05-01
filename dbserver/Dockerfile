@@ -6,4 +6,6 @@ LABEL io.docker-3tier-demo.image-specs="{\"Description\":\"Containerized MySQL\"
 ENV MYSQL_ROOT_PASSWORD=secret
 ENV MYSQL_DATABASE=mydb
 
+COPY mydb.sql /docker-entrypoint-initdb.d/
+
 EXPOSE 3306
